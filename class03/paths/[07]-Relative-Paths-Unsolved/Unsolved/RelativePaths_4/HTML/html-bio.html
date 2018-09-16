@@ -1,3 +1,4 @@
+<!-- Relative Paths Assignment 4 -->
 <!DOCTYPE html>
 <html lang="en-us">
 
@@ -5,41 +6,37 @@
   <meta charset="UTF-8">
   <title>Relative Paths Assignment 4</title>
 
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Fill in the href to the CSS such that this HTML file can access the CSS -->
+  <!-- Don't move the HTML or CSS file. Use Relative Linking -->
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
   <header>
-    <h1>Heading</h1>
+    <h1>Student Bio</h1>
   </header>
 
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque, officiis facere veniam quae eos quo
-    laborum culpa illo itaque ipsum dolorum quaerat id iure, tempore iste dolor doloribus. Ex similique expedita quia
-    amet, dolores temporibus esse recusandae nostrum ullam nihil unde eligendi! Impedit facere similique sequi adipisci
-    voluptas odit doloribus quaerat, quis expedita delectus commodi tempore nemo exercitationem porro obcaecati ea
-    cupiditate hic omnis harum ducimus. Quibusdam accusantium qui quisquam labore optio aspernatur dolorem ullam quae
-    explicabo possimus magni, ipsam beatae eius nam eligendi. Itaque?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque, officiis facere veniam quae eos quo
-    laborum culpa illo itaque ipsum dolorum quaerat id iure, tempore iste dolor doloribus. Ex similique expedita quia
-    amet, dolores temporibus esse recusandae nostrum ullam nihil unde eligendi! Impedit facere similique sequi adipisci
-    voluptas odit doloribus quaerat, quis expedita delectus commodi tempore nemo exercitationem porro obcaecati ea
-    cupiditate hic omnis harum ducimus. Quibusdam accusantium qui quisquam labore optio aspernatur dolorem ullam quae
-    explicabo possimus magni, ipsam beatae eius nam eligendi. Itaque?
-  </p>
+  <div class="container">
 
-  <div class="box-1">
-  <p> position:fixed </p>
+    <section id="main-bio">
+
+      <h2>Your Name</h2>
+
+      <img id="bio-image" src="https://placehold.it/200x200" alt="Your Name">
+
+      <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="http://www.lipsum.com/">www.lipsum.com</a></p>
+    </section>
+
+    <section id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </section>
   </div>
 
-  <div class="box-2">
-  <p> position: relative </p>
-  </div>
-
-  <div class="box-3">
-      <p> position: absolute </p>
-  </div>
-    
 </body>
 
 </html>
