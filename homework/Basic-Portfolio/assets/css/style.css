@@ -9,7 +9,6 @@
 /**************************/
 
 /* Browser defaults - eliminate margin */
-
  * {
    margin-left: 0;
    margin-right: 0;
@@ -17,9 +16,7 @@
   
 /* Defaults for any of our content */
 body {
-    /* relative this css directory! */
     background: lightgray url(../images/textured_paper.png);  
-
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
@@ -64,16 +61,12 @@ header {
     width: 960px;
     margin: 20px auto;
     overflow: auto;
-
-    /* border: 1px solid #000; */
 }
 
 /* Navigation bar- left side formatting */
 .left {
     float: left;
     width: 282px;
-    margin 0 0 0 20px;
-    /* border: 1px solid #000;   */
 }
 
 /* Navigation bar - right side formatting */
@@ -115,39 +108,8 @@ header {
 
     font-size: 20px;
     text-align: center;
-
-    /* border: 1px solid #000;   debugging box */
 }
 
-/*********************************/
-/* Gallery Page Specific Styles  */
-/*********************************/
-
-#gallery li {
-    list-style: none;    /* no bullets on gallery list items */
-    float: left;
-}
-
-/* Give all the buttons the same appearance and dimensions */
-#button1,
-#button2,
-#button3,
-#button4 {
-    height: 200px; 
-    width:  200px;
-    margin: 20px;
-    float: left;
-}
-
-/* Floating label over the button images */
-.btnlbl {
-    background-color: #4aaaa5;
-    color: white;
-    font-size: 16px;
-    padding:  17px 0 17px 0;
-    margin: 0;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-}
 
 /***********/
 /* Footers */
@@ -171,7 +133,6 @@ footer {
     border-style: solid;
 }
 
-
 /*******************************/
 /*  About Page Specific Styles */
 /*******************************/
@@ -179,14 +140,13 @@ footer {
 /* Biography Picture */
 #biopic {
     float: left;
-    padding: 20px;
+    padding: 10px 10px 10px 0;
 }
 
 /*********************************/
 /*  Contact Page Specific Styles */
 /*********************************/
 
-/* Biography Picture */
 .submit {
     border: 0;
     background: none;
@@ -195,9 +155,7 @@ footer {
     border-radius: 0px;
 }
 
-
 input[type="submit"]  
-/* Or better yet try giving an ID or class if possible*/
 {
  border: 0;
  background: none;
@@ -210,3 +168,38 @@ input[type="submit"]
  margin: 5px 0 0 0;
 }
 
+/*********************************/
+/* Gallery Page Specific Styles  */
+/*********************************/
+
+#gallery li {
+    position: relative;
+    list-style: none;    /* no bullets on gallery list items */
+    float: left;
+    margin: 20px;
+    /* border: 1px solid #000;    */
+}
+
+/* Give all the buttons the same appearance and dimensions */
+.btnimg {
+    height: 200px; 
+    width:  200px;
+    margin: 10px;
+    float: left;
+    border: 1px solid #777;  
+}
+
+/* Floating label over the button images */
+.btnlbl {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 200px;
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 16px;
+    padding:  18px 1px 18px 1px;
+    margin: 0;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+}
